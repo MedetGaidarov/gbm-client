@@ -1,0 +1,132 @@
+.footer {
+    height: 250px;
+    background: url('../../img/footer-bg.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.footer__wrapper {
+    padding: 40px 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__nav-list {
+    padding-bottom: 15px;
+    width: calc(100% + 21px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    border-bottom: 1px solid #fff;
+}
+
+.footer__icon {
+    width: 85px;
+    margin-bottom: 15px;
+}
+
+.footer__desc {
+    color: #fff;
+    line-height: 21px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.footer__nav-link {
+    color: #fff;
+}
+
+.footer__contact {
+    margin-top: 20px;
+    margin-left: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__number {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .footer__wrapper {
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .footer__nav-link {
+        font-size: 14px;
+    }
+
+    .footer__mail {
+        font-size: 15px;
+    }
+
+    .footer__desc {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 856px) {
+    .footer__nav-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        direction: rtl;
+        gap: 15px;      
+        margin-left: -5%;
+    }
+
+    .footer__contact {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+
+    .footer {
+        height: auto;
+    }
+
+    .footer__nav-list {
+        grid-template-columns: auto;
+        justify-content: flex-start;
+        width: auto;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 620px) {
+
+    .footer__wrapper {
+        flex-direction: column;
+        align-items: normal;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+    .footer {
+        padding-top: 50px;
+    }
+
+    .footer__nav-list {
+        direction: ltr;
+    }
+
+    .footer__contact {
+        align-items: flex-start;
+    }
+
+    .footer__number {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

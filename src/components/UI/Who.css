@@ -1,0 +1,87 @@
+.who {
+    height: 550px;
+    background: url('../../img/who/who-bg.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.who__wrapper {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.who__title {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 42px;
+    margin-bottom: 80px;
+}
+
+.who__features {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.who__item {
+    max-width: 400px;
+    text-align: center;
+}
+
+.who__icon {
+    margin-bottom: 30px;
+}
+
+.who__desc {
+    font-size: 24px;
+    color: #fff;
+}
+
+@media screen and (max-width: 1230px) {
+    .who__desc {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+
+    .who__features {
+        padding: 0 25px;
+        gap: 50px;
+    }
+
+    .who__desc {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+
+    .who {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .who__title {
+        font-size: 35px;
+    }
+
+    .who__features {
+        margin-right: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 415px) {
+
+    .who__icon {
+        width: 120px;
+    }
+
+}
