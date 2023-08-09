@@ -2,6 +2,7 @@
     height: 250px;
     background: url('../../img/footer-bg.jpg') center no-repeat;
     background-size: cover;
+    margin-top: auto;
 }
 
 .footer__wrapper {

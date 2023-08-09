@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
 @font-face {
   font-family: 'Helvetica';
   font-weight: 300;
@@ -37,4 +39,13 @@ body {
 
 a {
   text-decoration: none;
+}
+
+/* Для прижатия footer к низу */
+
+.App {
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }

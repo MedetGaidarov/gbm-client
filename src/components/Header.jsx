@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import headerLogo from '../img/header-logo.png';
 import contactIcon from '../img/contact-icon.png';
 import PhoneNumberFormatter from './phoneNumber';
@@ -28,9 +29,16 @@ const Header = () => {
     const [navActive, setNavActive] = useState(false);
     const [fixed, setFixed] = useState(false);
 
+    const location = useLocation();
+
+    const headerStyle = {
+        color: location.pathname === '/' ? 'white' : 'black'
+    };
+
     return (
+
         <div>
-            <header className={fixed ? "header fixed" : "header"}>
+            <header className={fixed ? "header fixed" : "header"} style={headerStyle}>
                 <div className="header__wrapper">
 
                     <nav className={navActive ? "nav active" : "nav"}>
@@ -39,13 +47,13 @@ const Header = () => {
                         </div>
                         <ul className="nav__list">
                             <li className="nav__item">
-                                <a href="#home" className="nav__link">Главная</a>
+                                <Link to="/" className="nav__link">Главная</Link>
                             </li>
                             <li className="nav__item">
-                                <a href="#test" className="nav__link">Тест</a>
+                                <Link to="/test" className="nav__link">Тест</Link>
                             </li>
                             <li className="nav__item">
-                                <a href="#about" className="nav__link">О проекте</a>
+                                <Link to="/about" className="nav__link">О проекте</Link>
                             </li>
                         </ul>
 

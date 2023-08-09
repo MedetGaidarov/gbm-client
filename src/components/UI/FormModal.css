@@ -20,8 +20,8 @@
 }
 
 .modal__wrapper {
-    width: 570px;
-    height: 670px;
+    width: 650px;
+    height: 750px;
     background: url('../../img/modal-bg.jpg') center no-repeat;
     border-radius: 15px;
     display: flex;
@@ -96,4 +96,25 @@
     background: #008CD4;
     font-weight: 700;
     cursor: pointer;
+}
+
+.modal__input input[type="file"] {
+    display: none;
+}
+
+.modal__file {
+    height: 60px;
+    padding-left: 16px !important;
+    padding-right: 24px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal__file-icon {
+    width: 40px;
+}
+
+.modal__file.modal__input {
+    padding: 0;
 }

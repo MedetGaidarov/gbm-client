@@ -1,9 +1,16 @@
-import React from 'react';
-import './UI/Frames.css'
+import React, { useState } from 'react';
+import './UI/Frames.css';
+import FormModal from './FormModal';
 
 const Frames = () => {
+
+    const [formActive, setFormActive] = useState(false);
+
     return (
         <div>
+
+            <FormModal active={formActive} setActive={setFormActive}/>
+
             <section className="frames">
                 <div className="frames__wrapper">
                     <h1 className="frames__title">
@@ -19,7 +26,7 @@ const Frames = () => {
                         ))}
                     </div>
 
-                    <button className="frames__button">Принять участие</button>
+                    <button className="frames__button" onClick={() => setFormActive(!formActive)}>Принять участие</button>
                 </div>
             </section>
         </div>

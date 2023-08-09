@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import InputMask from 'react-input-mask';
+import addFileIcon from '../img/addFile.svg';
 import './UI/FormModal.css'
 
 const FormModal = ({active, setActive}) => {
@@ -32,6 +33,11 @@ const FormModal = ({active, setActive}) => {
                           className='modal__input'
                         />
                         <input type="email" className="modal__input" placeholder='Email' required/>
+                        <label for="fileInput" class="modal__file modal__input">
+                            <span>Прикрепить резюме</span>
+                            <input type="file" id="fileInput" name="fileInput" />
+                            <img src={addFileIcon} alt="" className="modal__file-icon" />
+                        </label>
                     </form>
 
                     <p className="modal__proxy">Ответственность за достоверность предоставленных данных лежит на Вас.</p>
