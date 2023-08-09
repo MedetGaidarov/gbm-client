@@ -3,9 +3,16 @@ import headerLogo from '../img/header-logo.png';
 import contactIcon from '../img/contact-icon.png';
 import PhoneNumberFormatter from './phoneNumber';
 import './UI/Header.css'
+import { Link, useRoutes } from 'react-router-dom';
 
 const Header = () => {
 
+
+    const routes = useRoutes([
+    { path: '/', element: <Link to="/">Home</Link> },
+    { path: '/about', element: <Link to="/about">About</Link> },
+    // Добавьте другие роуты с элементами Link по необходимости
+  ]);
     const numberPhone = '+77777777777';
 
     useEffect(() => {
@@ -39,13 +46,13 @@ const Header = () => {
                         </div>
                         <ul className="nav__list">
                             <li className="nav__item">
-                                <a href="#home" className="nav__link">Главная</a>
+                                <Link to="/" className="nav__link">Главная</Link>
                             </li>
                             <li className="nav__item">
-                                <a href="#test" className="nav__link">Тест</a>
+                                <Link to="/test" className="nav__link">Тест</Link>
                             </li>
                             <li className="nav__item">
-                                <a href="#about" className="nav__link">О проекте</a>
+                                <Link to="/about" className="nav__link">О проекте</Link>
                             </li>
                         </ul>
 
