@@ -2,21 +2,21 @@
   font-family: 'Helvetica';
   font-weight: 300;
   font-style: normal;
-  src: url('./fonts/helvetica_light.otf');
+  src: url('/src/components/fonts/helvetica_light.otf');
 }
 
 @font-face {
   font-family: 'Helvetica';
   font-weight: 400;
   font-style: normal;
-  src: url('./fonts/helvetica_regular.otf');
+  src: url('/src/components/fonts/helvetica_regular.otf');
 }
 
 @font-face {
   font-family: 'Helvetica';
   font-weight: 700;
   font-style: normal;
-  src: url('./fonts/helvetica_bold.otf');
+  src: url('/src/components/fonts/helvetica_bold.otf');
 }
 
 
