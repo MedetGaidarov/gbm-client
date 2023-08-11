@@ -1,138 +1,149 @@
 .center-container {
-    /* padding: 150px; */
-    justify-content: center;
-    align-items: center;
-  
-  }
-  
-  .center-text {
-    text-align: center;
-  }
+  /* padding: 150px; */
+  justify-content: center;
+  align-items: center;
 
+}
 
-
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-  }
-  
-  .left-align-content {
-    text-align: left;
-    margin-left: 20px; /* Add margin if needed */
-  }
-
-  .test-container {
+.center-text {
   text-align: center;
-  padding: 20px;
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.left-align-content {
+  text-align: left;
+  margin-left: 20px;
+  /* Add margin if needed */
 }
 
 
 .question-title {
-    color: #008cd4;
-    margin-bottom: 20px;
-  }
-  
-  
+  color: #008cd4;
+  margin-bottom: 60px;
+  font-size: 24px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+
 options-list {
-    list-style-type: none;
-    padding: 0;
-  }
-  option {
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    color: #008cd4;
-    border-radius: 15px; /* Add border radius */
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Add border-color transition */
-  }
-  
-  option:hover {
-    background-color: #f0f0f0;
-    color: #0065a3;
-    border-color: #0065a3; /* Change border color on hover */
-  }
-  
-  .option-selected {
-    background-color: #008cd4;
-    color: white;
-    border-color: #008cd4; /* Change border color for selected option */
-  }
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-gap: 45px;
+  margin-left: 30px;
+}
 
-  .option-label {
-    display: block;
-    margin: 10px;
-    cursor: pointer;
-  }
-  
-  .option-label:hover {
-    background-color: #f0f0f0;
-  }
-  
-  .option-label input[type="radio"] {
-    display: none;
-  }
-  
-  .option-label input[type="radio"] + span {
-    display: inline-block;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    transition: background-color 0.3s, color 0.3s;
-    width: 50%;
-  }
-  
-  .option-label input[type="radio"]:checked + span {
-    background-color: #008cd4;
-    color: white;
-    border-color: #008cd4;
-  }
-  
-  .next-button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-  }
-  .down-arrow-icon {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin-left: 10px;
-    vertical-align: middle;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid #008cd4;
-  }  
+.option-label:hover {
+  background-color: #f0f0f0;
+}
+
+.option-label input[type="radio"] {
+  display: none;
+}
+
+.option-label input[type="radio"]+span {
+  width: 270px;
+  display: inline-block;
+  padding: 10px 35px;
+  box-shadow: 4px 4px 25px 0 rgba(0,0,0,.25);
+  border-radius: 15px;
+  font-size: 17px;
+  color: #008CD4;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  transform: scale(1.3);
+  transform-origin: left top;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.option-label input[type="radio"]:checked+span {
+  background-color: #008cd4;
+  color: white;
+  border-color: #008cd4;
+}
+
+.next-button {
+  width: 34px;
+  height: 34px;
+  outline: none;
+  border: none;
+  background: #008CD3;
+  border-radius: 50%;
+  box-shadow: 4px 4px 25px 0 rgba(0,0,0,.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  font-size: 20px;
+  padding-top: 3px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.test__progress {
+  height: 30vh;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.arrow-icon path {
+  fill: #fff;
+}
+
+.next-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.down-arrow-icon {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 10px;
+  vertical-align: middle;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #008cd4;
+}
 
 
-  .progress-lines {
-    position: relative;
-    top: 0;
-    right: 0;
-    /* height: 100%; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .progress-line {
-    width: 2px;
-    height: 50px;
-    background-color: #ccc;
-    margin: 8px 0;
-    transition: background-color 0.3s;
-  }
-  
-  .active-line {
-    background-color: #008cd4;
-  }
+.progress-lines {
+  position: relative;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
 
-  .content-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-    position: relative;
-  }
+.progress-line {
+  width: 2px;
+  height: 50px;
+  background-color: #ccc;
+  transition: background-color 0.3s;
+}
+
+.active-line {
+  background-color: #008cd4;
+}
+
+.content-container {
+  height: 97vh;
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  position: relative;
+}

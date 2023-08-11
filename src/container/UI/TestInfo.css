@@ -1,9 +1,8 @@
 .test__info {
-    padding: 200px 0 100px;
+    padding: 200px 0 100px 80px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
 }
 
 .test__info_wrapper {
@@ -28,12 +27,8 @@
     gap: 40px;
 }
 
-.about__img {
-    width: 490px;
-}
-
 .test__info-block {
-    width: 680px;
+    width: 1000px;
 }
 
 .test__info-title {
@@ -47,5 +42,25 @@
     font-size: 16px;
     line-height: 24px;
     color: #17242A;
+    margin-bottom: 45px;
+}
+
+.test__info-btn {
+    width: 230px;
+    border-radius: 50px;
+    padding: 13px 0;
+    color: #008CD4;
+    border: 2px solid #008CD4;
+    background: transparent;
+    outline: none;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.test__info-btn:hover {
+    background: #008CD4;
+    color: #fff;
 }
 
