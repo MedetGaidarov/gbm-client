@@ -57,13 +57,13 @@ const Header = () => {
                             </li>
                         </ul>
 
-                        <div class="nav__close" id="nav-close" onClick={() => setNavActive(false)}>
-                            <i class="ri-close-line"></i>
+                        <div className="nav__close" id="nav-close" onClick={() => setNavActive(false)}>
+                            <i className="ri-close-line"></i>
                         </div>
                     </nav>
 
                     <div className="nav__toggle" onClick={() => setNavActive(true)}>
-                            <i class="ri-menu-line"></i>
+                            <i className="ri-menu-line"></i>
                     </div>
 
                     <div className="header__info">

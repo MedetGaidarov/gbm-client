@@ -41,7 +41,7 @@ options-list {
   margin-left: 30px;
 }
 
-.option-label:hover {
+.option-label input[type="radio"]+span:hover {
   background-color: #f0f0f0;
 }
 
@@ -139,11 +139,9 @@ options-list {
 }
 
 .content-container {
-  height: 97vh;
-  padding: 0 80px;
+  width: 90vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f0f0f0;
   position: relative;
 }

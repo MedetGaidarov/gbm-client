@@ -1,5 +1,12 @@
+.test-container {
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 .test__info {
-    padding: 200px 0 100px 80px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

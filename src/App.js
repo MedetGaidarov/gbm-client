@@ -5,6 +5,7 @@ import './index.css';
 import MainPage from './pages/MainPage';
 import AboutPage from './pages/AboutPage';
 import TestPage from './pages/TestPage';
+import AdminPage from './pages/AdminPage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/' element={<MainPage />}/>
         <Route path='/about' element={<AboutPage />}/>
         <Route path='/test' element = {<TestPage/> }/>
+        <Route path='/admin' element={<AdminPage />}/>
       </Routes>
 
       <Footer />
