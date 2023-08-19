@@ -49,6 +49,10 @@
     padding: 27px 0;
 }
 
+.admin__claims-item:first-child {
+    border: 0;
+}
+
 .admin__claims-head {
     width: 85%;
     margin-bottom: 30px;
